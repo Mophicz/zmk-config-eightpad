@@ -1,0 +1,6 @@
+if SHIELD_EIGHTPAD
+
+config ZMK_KEYBOARD_NAME
+    default "Eightpad"
+
+endif
