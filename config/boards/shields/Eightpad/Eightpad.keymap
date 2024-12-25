@@ -15,5 +15,6 @@
                 &kp BSPC    &kp UP    &kp DEL
                 &kp LEFT    &kp DOWN    &kp RIGHT
             >;
+        };
     };
 };
