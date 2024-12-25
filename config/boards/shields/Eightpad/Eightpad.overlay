@@ -9,12 +9,12 @@
 
         input-gpios =
             <&seeeduino_xiao_rp2040 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-            <&seeeduino_xiao_rp2040 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-            <&seeeduino_xiao_rp2040 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
             <&seeeduino_xiao_rp2040 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-            <&seeeduino_xiao_rp2040 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
             <&seeeduino_xiao_rp2040 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-            <&seeeduino_xiao_rp2040 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-            <&seeeduino_xiao_rp2040 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            <&seeeduino_xiao_rp2040 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+            <&seeeduino_xiao_rp2040 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+            <&seeeduino_xiao_rp2040 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+            <&seeeduino_xiao_rp2040 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+            <&seeeduino_xiao_rp2040 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
     };
 };
