@@ -1,10 +1,16 @@
 / {
-    default_kscan: kscan {
+    chosen {
+        zmk,physical-layout = &physical_layout0;
+        // Other chosen items
+    };
+
+    kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-direct";
         label = "default_kscan";
+        wakeup-source;
 
-        input-gpios =
-            <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+        input-gpios
+            = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
             <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
             <&xiao_d 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
             <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
@@ -12,11 +18,6 @@
             <&xiao_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
             <&xiao_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
             <&xiao_d 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-    };
-};
-/ {
-    chosen {
-        zmk,physical-layout = &physical_layout0;
-        // Other chosen items
+            ;
     };
 };
