@@ -1,0 +1,33 @@
+#include <physical_layouts.dtsi>
+
+/ {
+    physical_layout0: physical_layout_0 {
+        compatible = "zmk,physical-layout";
+        display-name = "Eightpad";
+        kscan = <&kscan0>;
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100    0    0       0     0     0>
+            , <&key_physical_attrs 100 100  100    0       0     0     0>
+            , <&key_physical_attrs 100 100  200    0       0     0     0>
+            , <&key_physical_attrs 100 100    0  100       0     0     0>
+            , <&key_physical_attrs 100 100  100  100       0     0     0>
+            , <&key_physical_attrs 100 100  200  100       0     0     0>
+            , <&key_physical_attrs 100 100    0  200       0     0     0>
+            , <&key_physical_attrs 100 100  200  200       0     0     0>;
+    };
+};
+
+/ {
+    Eightpad_position_map {
+        compatible = "zmk,physical-layout-position-map";
+        complete;
+
+        Eightpad_map: Eightpad {
+            physical-layout = <&physical_layout0>;
+            positions
+                = < 0     1>
+                , < 2  3  4>
+                , < 5  6  7>;
+        };
+    };
+};

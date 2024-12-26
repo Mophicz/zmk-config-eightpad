@@ -2,14 +2,9 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-        keymap {
+    keymap {
         compatible = "zmk,keymap";
-
-        default_layer { // Layer 0
-            display-name = "Base";
-// ----------------------------------------------
-// |     Z     |     M     |     K     |
-// |     A     |     B     |     C     |
+        default {
             bindings = <
                 &none     &bootloader
                 &kp BSPC    &kp UP    &kp DEL
