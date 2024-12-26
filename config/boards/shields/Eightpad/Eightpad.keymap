@@ -6,7 +6,7 @@
         compatible = "zmk,keymap";
         default {
             bindings = <
-                &none     &bootloader
+                &kp ESC   &none    &bootloader
                 &kp BSPC    &kp UP    &kp DEL
                 &kp LEFT    &kp DOWN    &kp RIGHT
             >;
